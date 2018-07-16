@@ -13,6 +13,11 @@
         <span slot="label">{{index}}</span>
       </grid-item>
     </grid>
+    <p>
+      <i class="iconfont icon-checked"></i>
+      <i class="iconfont icon-bcm"></i>
+    </p>
+    <div class="odiv"></div>
   </div>
 </template>
 
@@ -70,5 +75,11 @@ export default {
   border-color: aqua;
   width: 90%;
   margin: 20px auto;
+  font-size: 0.1867rem;
+}
+.odiv{
+  width: 2rem;
+  height: 2rem;
+  background-color: #f00;
 }
 </style>

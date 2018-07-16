@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Demo from '@/components/demo/demo'
+import Home from '@/pages/index/index'
 
 Vue.use(Router)
 
@@ -9,11 +8,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: HelloWorld
-    },
-    {
-      path: '/demo',
-      component: Demo
+      component: Home
     }
   ],
   //跳转路由时也没置顶。当在按下 后退/前进 按钮时，就会像浏览器的原生表现那样
