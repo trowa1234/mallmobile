@@ -23,7 +23,8 @@
 
 <script>
 import { Grid, GridItem } from "vux";
-import { getIndexData } from "@/api/api";
+import { $GET,$POST } from "@/api/api";
+import ApiUrls from "@/api/url";
 
 export default {
   name: "demo",
@@ -42,9 +43,10 @@ export default {
   },
   methods: {
     _getIndexData() {
-     getIndexData().then(res => {
-       console.log(res)
-     })
+      let params = { name: "kidd",age:36};
+      $GET(ApiUrls.getIndexData, params).then(res => {
+        console.log(res);
+      });
     }
   }
 };
@@ -77,7 +79,7 @@ export default {
   margin: 20px auto;
   font-size: 0.1867rem;
 }
-.odiv{
+.odiv {
   width: 2rem;
   height: 2rem;
   background-color: #f00;
