@@ -4,7 +4,10 @@ const api_root = process.env.NODE_ENV === 'development' ? '/api' : 'https://mall
 
 const urlsModule = {
   //首页数据
-  getIndexData: api_root + '/index/getIndexData'
+  getIndexData: api_root + '/index/getIndexData',
+
+  //首页导航按钮数据
+  indexNavBtn: api_root + '/index/button',
 }
 
 

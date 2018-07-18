@@ -1,9 +1,29 @@
 @import "./reset.less";
 
+//重置首页轮播图点的样式
 .content .vux-slider > .vux-indicator > a > .vux-icon-dot{
-  background-color: #fff;
+  background: rgba(0, 0, 0, .3);
 }
 .content .vux-slider > .vux-indicator > a > .vux-icon-dot.active{
   background-color: #FF5C5B;
   width: .346667rem;
+}
+
+//重置首页导航按钮样式
+.nav-list .weui-grids:before{
+  display: none;
+}
+.nav-list .weui-grid:after{
+  display: none;
+}
+.nav-list .weui-grid{
+  padding: 6px 0;
+}
+.nav-list .weui-grid .weui-grid__icon{
+  width: .853333rem;
+  height: .853333rem;
+}
+.nav-list .weui-grid .weui-grid__label{
+  font-size: 12px;
+  margin-top: 6px;
 }
