@@ -10,7 +10,7 @@
       </div>
       <div class="nav-list">
         <grid :show-vertical-dividers="false" :cols="5" :show-lr-borders="false">
-          <grid-item v-for="(item,index) in navList" :key="index" :label="item.btnName">
+          <grid-item v-for="(item,index) in navList" :key="index" :label="item.btnName" @on-item-click="goPage(item)">
             <img slot="icon" :src="rootUrl+item.btnImg">
           </grid-item>
         </grid>
@@ -59,6 +59,9 @@ export default {
         console.log(res);
         this.navList =res.data;
       });
+    },
+    goPage(item){
+      console.log(item)
     }
   }
 };
